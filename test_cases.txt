@@ -6,18 +6,140 @@ piem. Zinot ka kurss ir 1.0831, padodot 10 eur, rezultāts būs 10.83 usd
 -----
 
 2 veiksmīgi scenāriji (happy path):
+-Given our library, entering '1' and then 'flex', result will be: 
+1933988797 - Flex on Java by Bernerd Allmon, Jeremy Anderson
+1933988762 - Hello! Flex 4 by Peter Armstrong
 
+-Given our library, entering '2', result will be:
+10 Longest Books:
+1. Ten Years of UserFriendly.Org (1096 pages)
+2. SQL Server MVP Deep Dives (848 pages)
+3. The Awesome Power of Direct3D/DirectX (840 pages)
+4. Windows PowerShell in Action, Second Edition (700 pages)
+5. Java Development with Ant (672 pages)
+6. Seam in Action (624 pages)
+7. Ant in Action (600 pages)
+8. iText in Action, Second Edition (600 pages)
+9. Spring in Practice (600 pages)
+10. OSGi in Action (576 pages)
 
 
 5 izmantošanas scenāriji (use-case):
-
-
+-Given our library, entering '1' and then 'Best book of all time', result will be: No matching books found.
+-Given our library, entering '5' and then '42', result will be: Book with ISBN '42' not found in the library.
+-Given our library, entering '4' and then 'Great Book', '', '1412412515', '200', 'ME', 'today', 'its a book and its great', as a result the book will be added successfully.
+-Given our library, entering '6' and then '1617290246', result will be: Book 'Arduino in Action' marked as free.
+-Given our library, entering '7' , result will save the library and exit the program.
 
 
 
 
 5 robežas scenāriji (edge-case):
-
-
-
-
+-Given our library, entering 'dont want to', result will be: Invalid choice. Please enter a number from 1 to 7.
+-Given our library, entering '4' and then '-', '-', '-', result will show ValueError.
+-Given our library, entering '1' and then '📖', result will be: No matching books found.
+-Given our library, entering '8', result will be: Invalid choice. Please enter a number from 1 to 7.
+-Given our library, entering '1' and then ' ', result will be: 
+1933988673 - Unlocking Android by W. Frank Ableson, Charlie Collins, Robi Sen
+1933988320 - Zend Framework in Action by Rob Allen, Nick Lo, Steven Brown
+1933988797 - Flex on Java by Bernerd Allmon, Jeremy Anderson
+1935182234 - Griffon in Action by Andres Almiray, Danno Ferrin, , James Shingler
+193518217X - OSGi in Depth by Alexandre de Castro Alves
+1933988762 - Hello! Flex 4 by Peter Armstrong
+1933988711 - Brownfield Application Development in .NET by Kyle Baley, Donald Belcham
+1884777864 - Jaguar Development with PowerBuilder 7 by Michael Barlotta
+1932394826 - iBATIS in Action by Clinton Begin, Brandon Goodin, Larry Meadors
+1932394699 - Ruby for Rails by David A. Black
+1933988657 - The Well-Grounded Rubyist by David A. Black
+1933988452 - Website Owner's Manual by Paul A. Boag
+1935182463 - ASP.NET 4.0 in Practice by Daniele Bochicchio, Stefano Mostarda, , Marco De Sanctis
+1935182080 - Hello! Python by Anthony Briggs
+193398886X - iPhone in Action by Christopher Allen, Shannon Appelcline
+1933988428 - Silverlight 2 in Action by Chad A. Campbell, John Stockton
+193518220X - The Quick Python Book, Second Edition by Naomi R. Ceder
+188477752X - Practical Methods for Your Year 2000 Problem by Robert Chapman
+1884777368 - Mobile Agents by William R. Cockayne and Michael Zyda, editors
+1935182307 - Spring Dynamic Modules in Action by Arnaud Cogoluegnes, Thierry Templier, , Andy Piper
+1935182927 - Android in Practice by Charlie Collins, Michael D. Galpin, , Matthias Kaeppler
+1935182897 - Hello! HTML5 & CSS3 by Rob Crowther
+1933988401 - Seam in Action by Dan Allen
+1933988932 - Grails in Action by Glen Smith, Peter Ledbrook
+1884777759 - Up to Speed with Swing, Second Edition by Steven Gutz
+1933988916 - OSGi in Action by Richard S. Hall, Karl Pauls, Stuart McCulloch, , David Savage
+1930110588 - Java Development with Ant by Erik Hatcher, Steve Loughran
+1933988177 - Lucene in Action, Second Edition by Erik Hatcher, Otis Gospodnetic, , Michael McCandless
+1884777538 - The Awesome Power of PowerJ by Tim Hatton
+1884777546 - The Awesome Power of Power++ by Tim Hatton
+193518248X - Azure in Action by Chris Hay, Brian H. Prince
+1930110979 - Code Generation in Action by Jack Herrington
+1935182366 - Camel in Action by Claus Ibsen, Jonathan Anstey
+193398838X - Taming Text by Grant S. Ingersoll, Thomas S. Morton, , Andrew L. Farris
+1617290017 - iOS 4 in Action by Jocelyn Harrington, Brandon Trebitowski, Christopher Allen, , Shannon Appelcline
+1935182390 - R in Action by Robert I. Kabacoff
+1935182277 - Rails 3 in Action by Ryan Bigg, Yehuda Katz
+1935182552 - Continuous Integration in .NET by Marcin Kawalerowicz, Craig Berntson
+1932394133 - Technology Paradise Lost by Erik Keller
+132612313 - Object Technology Centers of Excellence by Timothy D. Korson, Vijay K. Vaishnavi
+1884777473 - The Awesome Power of Direct3D/DirectX by Peter J. Kovach
+1933988053 - AspectJ in Action, Second Edition by Ramnivas Laddad
+1935182196 - Hadoop in Action by Chuck Lam
+1884777082 - Client/Server Yellow Pages by Compiled, introduced by Ted Lewis
+1884777066 - Object Oriented Application Frameworks by Ted Lewis, friends
+1933988789 - Erlang and OTP in Action by Martin Logan, Eric Merritt, , Richard Carlsson
+1933988819 - SharePoint 2007 Developer's Guide to Business Data Catalog by Brett Lonsdale, Nick Swan
+133964256 - Doing IT Right by Harold Lorin
+193239480X - Ant in Action by Steve Loughran, Erik Hatcher
+193518234X - Restlet in Action by Jerome Louvel, Thierry Boileau, , Philippe Mougin
+1935182617 - iText in Action, Second Edition by Bruno Lowagie
+131271687 - SNA and TCP/IP Enterprise Networking by Daniel C. Lynch, James P. Gray, and Edward Rabinovitch, editors
+1932394478 - Subversion in Action by Jeffrey Machols
+013319955X - Comprehensive Networking Glossary and Acronym Guide by Gary Scott Malkin
+132869985 - Internet BBSs by Richard Scott Mark
+1884777481 - Inside LotusScript by Joe McGinn
+132621894 - Planning and Managing ATM Networks by Daniel Minoli, Thomas W. Golway, , Norris P. Smith
+137353006 - Client/Server Applications on ATM Networks by Daniel Minoli, Andrew Schmidt
+1935182188 - Entity Framework 4 in Action by Stefano Mostarda, Marco De Sanctis, , Daniele Bochicchio
+1617290149 - Sass and Compass in Action by Wynn Netherland, Nathan Weizenbaum, Chris Eppstein, , Brandon Mathis
+1884777503 - Core OWL 5.0 by Ted Neward
+1884777465 - Advanced OWL 5.0 by Ted Neward
+9781935182047 - SQL Server MVP Deep Dives by Contributions from 53 SQL Server MVPs; Edited by Paul Nielsen, Kalen Delaney, Greg Low, Adam Machanic, Paul S. Randal, , Kimberly L. Tripp
+1935182269 - PostGIS in Action by Regina O. Obe, Leo S. Hsu
+1933988622 - ASP.NET MVC in Action by Jeffrey Palermo, Ben Scheirman, , Jimmy Bogard
+193518279X - ASP.NET MVC 2 in Action by Jeffrey Palermo, Ben Scheirman, Jimmy Bogard, Eric Hexter, , Matthew Hinze
+1617290416 - ASP.NET MVC 4 in Action by Jeffrey Palermo, Jimmy Bogard, Eric Hexter, Matthew Hinze, , Jeremy Skinner
+1932394907 - Windows PowerShell in Action by Bruce Payette
+1935182137 - Windows PowerShell in Action, Second Edition by Bruce Payette
+1935182374 - Silverlight 4 in Action, Revised Edition by Pete Brown
+1933988924 - Real-World Functional Programming by Tomas Petricek with Jon Skeet
+193398855X - Dependency Injection by Dhanji R. Prasanna
+1933988606 - DSLs in Boo: Domain-Specific Languages in .NET by Oren Eini writing as Ayende Rahien
+1935182595 - Clojure in Action by Amit Rathore
+193398869X - Secrets of the JavaScript Ninja by John Resig
+132623129 - Microsoft Office Essentials by Ronny Richardson
+1933988266 - SOA Patterns by Arnon Rotem-Gal-Oz
+1933988495 - Hello World! by Warren D. Sande, Carter Sande
+1935182544 - Portlets in Action by Ashish Sarin
+1932394273 - SWT/JFace in Action by Matthew Scarpino, Stephen Holder, Stanford Ng, , Laurent Mihalkovic
+138892709 - Multiprotocol over ATM by Andrew Schmidt, Daniel Minoli
+1935182501 - Dependency Injection in .NET by Mark Seemann
+1930110464 - Instant Messaging in Java by Iain Shigeoka
+1884777392 - Java Applets and Channels Without Programming by Ronny Richardson, Michael Shoffner, Marq Singer, Bruce Murray, , Jack Gambol
+1935182005 - PowerShell in Practice by Richard Siddaway
+132632942 - Making Sense of Java by Bruce Simpson, John Mitchell, Brian Christeson, Rehan Zaidi, , Jonathan Levine
+1932394818 - C++/CLI in Action by Nishant Sivakumar
+1933988258 - Becoming Agile by Greg Smith, Ahmed Sidky
+1933988940 - ActiveMQ in Action by Bruce Snyder, Dejan Bosanac, , Rob Davies
+138411808 - Implementing PeopleSoft Financials by Early Stephens
+1935182730 - SQL Server DMVs in Action by Ian W. Stirk
+1935182021 - JUnit in Action, Second Edition by Petar Tahchiev, Felipe Leme, Vincent Massol, , Gary Gregory
+1935182587 - iPhone and iPad in Action by Brandon Trebitowski, Christopher Allen, , Shannon Appelcline
+1935182129 - Ten Years of UserFriendly.Org by JD "Illiad" Frazer
+1932394354 - Spring in Action by Craig Walls, Ryan Breidenbach
+1935182358 - Spring in Action, Third Edition by Craig Walls
+1935182056 - Spring in Practice by Willie Wheeler with Joshua White
+1935182714 - SharePoint 2010 Workflows in Action by Phil Wicklund
+1935182773 - SharePoint 2010 Web Parts in Action by Wictor Wilén
+1933988770 - C++ Concurrency in Action by Anthony Williams
+1617290246 - Arduino in Action by Martin Evans, Joshua Noble, , Jordan Hochenbaum
+1617290572 - Node.js in Action by Mike Cantelon, Marc Harter, T.J. Holowaychuk, , Nathan Rajlich
+1617290491 - HTML5 in Action by Rob Crowther, Joe Lennon, Ash Blue, , Greg Wanish

@@ -2,9 +2,9 @@
 # Bibliotēkas uzskaites sistēma
 #
 # Atrodiet 5 kļūdas un izlabojiet tos
-# 2 - sintaksiskas kļūdas (SyntaxError)
-# 2 - izpildes kļūdas (RuntimeError)
-# 1 - loģikas kļūda (LogicalError)
+# 2 - sintaksiskas kļūdas (SyntaxError) + +
+# 2 - izpildes kļūdas (RuntimeError) + +
+# 1 - loģikas kļūda (LogicalError) +
 #
 
 import json
@@ -33,7 +33,7 @@ def search_books_by_title(books):
     keyword = input("Enter part of the book title: ")
     found_books = []
     for book in books:
-        if keyword.lower() in book["tile"].lower():
+        if keyword.lower() in book["title"].lower():
             found_books.append(book)
     if found_books:
         print("Matching books:")
@@ -49,9 +49,12 @@ def sort_books_by_page_count(books, reverse):
         print(f"{i}. {book['title']} ({book['pageCount']} pages)")
 
 def mark_book_taken(books, taken):
-    isbn = input("Enter the ISBN of the book to mark as taken: ")
+    if taken:
+        isbn = input("Enter the ISBN of the book to mark as taken: ")
+    else:
+        isbn = input("Enter the ISBN of the book to mark as free: ")
     for book in books:
-        if book["isb"] == isbn:
+        if book["isbn"] == isbn:
             book["taken"] = taken
             if taken:
                 print(f"Book '{book['title']}' marked as taken.")
@@ -79,16 +82,16 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    if choice == "1"
+    if choice == "1":
         search_books_by_title(books)
 
     elif choice == "2":
-    print("10 Longest Books:")
-    sort_books_by_page_count(books, False)
+        print("10 Longest Books:")
+        sort_books_by_page_count(books, True)
 
     elif choice == "3":
         print("10 Shortest Books:")
-        sort_books_by_page_count(books, True)
+        sort_books_by_page_count(books, False)
 
     elif choice == "4":
         add_book(books)
